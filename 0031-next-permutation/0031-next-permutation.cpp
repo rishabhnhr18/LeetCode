@@ -26,3 +26,5 @@ public:
         reverse(nums.begin()+index+1, nums.end());
     }
 };
+
+//next_permuation(nums.begin(), nums.end());
