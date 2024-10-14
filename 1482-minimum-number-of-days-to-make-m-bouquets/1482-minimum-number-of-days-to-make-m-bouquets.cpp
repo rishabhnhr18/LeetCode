@@ -2,16 +2,16 @@ class Solution {
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
 
-        if ((long long )bloomDay.size() < ((long long)m *(long long) k))
+        if ((long long)bloomDay.size() < ((long long)m *(long long) k))
             return -1;
-        long long  bouquets = 0, count = 0;
-        long long low = *std::min_element(bloomDay.begin(), bloomDay.end());
-        long long high = *std::max_element(bloomDay.begin(), bloomDay.end());
+        int  bouquets = 0, count = 0;
+        int low = *std::min_element(bloomDay.begin(), bloomDay.end());
+        int high = *std::max_element(bloomDay.begin(), bloomDay.end());
         while (low <= high) {
             bouquets = 0;
             count = 0;
-            long  mid = (low + high) / 2;
-            for (long i = 0; i < bloomDay.size(); i++) {
+            int  mid = (low + high) / 2;
+            for (int i = 0; i < bloomDay.size(); i++) {
                 if ((bloomDay[i]) <= mid)
                     count++;
                 else {
