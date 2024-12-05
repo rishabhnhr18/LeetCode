@@ -4,7 +4,6 @@ class Solution {
             return true;
         if (start == null || target == null || start.length() != target.length())
             return false;
-        int count1 = 0, count2 = 0;
         int i = 0, j = 0;
         for (; i < start.length() && j < target.length() ; i++, j++) {
             while ( i < start.length() && start.charAt(i) == '_')
