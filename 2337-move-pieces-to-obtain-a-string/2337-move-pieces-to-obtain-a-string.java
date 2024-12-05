@@ -12,7 +12,6 @@ class Solution {
                 j++;
             if (i == start.length() && j == target.length())
                 return true;
-
             if (i == start.length() || j == target.length())
                 return false;
             if (start.charAt(i) != target.charAt(j))
