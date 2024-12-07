@@ -1,7 +1,7 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        Map<Character, Integer> sCount = new TreeMap<>();
-        Map<Character, Integer> tCount = new TreeMap<>();
+        Map<Character, Integer> sCount = new HashMap<>();
+        Map<Character, Integer> tCount = new HashMap<>();
         if(s==null || t==null || s.length()!=t.length()) return false;
         int p=0;
         while(p<s.length())  // stroing the frequency of characters in both strings
