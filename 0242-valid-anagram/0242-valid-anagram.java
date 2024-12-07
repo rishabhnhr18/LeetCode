@@ -16,7 +16,7 @@ class Solution {
 
     /* Core Idea
     Store the count of each characters of strings in map
-    check the euality of both maps
+    check the equality of both maps
     if both maps are equal, then the strings are anagrams else not  
     */
 }
