@@ -2,13 +2,12 @@ class Solution {
     public int myAtoi(String s) {
         if (s == null || s.length() == 0 || s.isEmpty())
             return 0;
-        s = s.trim();
-                if (s == null || s.length() == 0 || s.isEmpty()) return 0;
-        StringBuilder str = new StringBuilder(); // removing whitespaces from end
+        s = s.trim(); // removing whitespaces from end
+        if (s == null || s.length() == 0 || s.isEmpty())
+            return 0;
+        StringBuilder str = new StringBuilder();
         int i = 0;
-        if (s.charAt(0) == '-')
-
-        {
+        if (s.charAt(0) == '-') {
             str.append('-'); // checking if no is -ve or +ve
             i++;
         }
@@ -25,7 +24,6 @@ class Solution {
         if (str.length() == 0 || (str.length() == 1 && str.charAt(0) == '-'))
             return 0;
         try {
-
             return Integer.parseInt(str.toString());
         } catch (NumberFormatException nfe) {
             if (str.charAt(0) == '-')
