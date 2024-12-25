@@ -17,7 +17,7 @@ class Solution {
     public List<Integer> result;
     public List<Integer> largestValues(TreeNode root) {
         result=new ArrayList<>();
-        dfs(root, 0);
+        dfs(root, 0);  //initiallty at the first node with root, 0 values
         return result;
     }
     private void dfs(TreeNode root, int level)
