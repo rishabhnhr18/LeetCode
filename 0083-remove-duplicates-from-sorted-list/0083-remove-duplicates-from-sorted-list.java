@@ -10,6 +10,8 @@
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
+        /*
+            Approach 1 correct
         if(head==null) return null;
         if(head.next==null) return head;
         Set<Integer> s= new LinkedHashSet<>();
@@ -22,5 +24,18 @@ class Solution {
         res=res.next;
        }
        return dummy.next;
+       */
+
+       // aproach 2
+
+       if(head==null) return null;
+       if(head.next==null) return head;
+       ListNode node=head;
+       while(node!=null && node.next!=null)
+       {
+        if(node.val==node.next.val) node.next=node.next.next;
+        else node=node.next;
+       }
+       return head;
     }
 }
