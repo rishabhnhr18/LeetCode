@@ -1,7 +1,7 @@
 class Solution {
     public int maxArea(int[] height) {
 /*
-            Approach1 (Wrong giving TLE)
+            Approach1 (Wrong giving TLE) Brute Force
 
         if(height==null || height.length==0) return 0;
         int max=Integer.MIN_VALUE;
@@ -18,7 +18,7 @@ class Solution {
         return max;
         */
 
-        // approach 2
+        // approach 2   Optimal using 2 Pointer
         if(height==null || height.length==0) return 0;
         int left=0;
         int right=height.length-1;
