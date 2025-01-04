@@ -39,7 +39,8 @@ class Solution {
             int f=fo[i];
             int l=lo[i];
             Set<Character> uniqueChars=new HashSet<>();
-            if(f<l)
+            if(f==Integer.MAX_VALUE) continue;
+            else if(f<l)
             {
                 for(int j=f+1; j<l; j++) uniqueChars.add(s.charAt(j)); 
             }
