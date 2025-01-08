@@ -1,6 +1,6 @@
 class Solution {
-    private boolean isPrefixAndSuffix(String s2, String s1) {
-        return s2.startsWith(s1) && s2.endsWith(s1);
+    private boolean isPrefixAndSuffix(String s1, String s2) {
+        return s1.startsWith(s2) && s1.endsWith(s2);
     }
 
     public int countPrefixSuffixPairs(String[] words) {
