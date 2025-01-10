@@ -7,7 +7,7 @@ class Solution {
             int[] temp = new int[26];
             for (char c : s.toCharArray()) {
                 temp[c - 'a']++;
-                freq2[c - 'a']=Math.max(freq2[c - 'a'] , temp[c - 'a']);
+                freq2[c - 'a'] = Math.max(freq2[c - 'a'], temp[c - 'a']);
             }
         }
         List<String> ans = new ArrayList<>();
